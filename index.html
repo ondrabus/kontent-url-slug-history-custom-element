@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Label</title>
+	<script src="https://app.kontent.ai/js-api/custom-element/v1/custom-element.min.js"></script>
+	<script type="text/javascript">
+		window["CustomElement"] = CustomElement
+	</script>
+	<link rel="stylesheet" href="https://kentico.github.io/kontent-custom-element-samples/shared/custom-element-v2.css">
+	<style>
+		body
+		{
+			font-family: 'GT Walsheim', 'GT Walsheim Pro', sans-serif;
+			font-size: 14px;
+			color: rgb(82,82,82);
+			margin: 0;
+		}
+
+		#label, .label {
+			min-height: 30px;
+		}
+
+		.list > div {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			line-height: 40px;
+		}
+		.list > div > div {
+			width: 15%;
+		}
+		.list > div > span {
+			margin-left: 10px;
+		}
+		.u-spacing-l {
+			margin-top: 16px;
+		}
+		.manual-input {
+			margin: 10px 0;
+		}
+		.manual-input > div {
+			display: flex;
+			flex-direction: row;
+			margin: 10px 0 20px;
+		}
+		.manual-input .text-field {
+			width: 40%;
+			margin-right: 10px;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="slug-container">
+		<i class="icon-rotate-double-right"></i> initializing...
+	</div>
+	<div class="manual-input">
+		<p class="u-spacing-l action-medium">Manual input</p>
+		<div>
+			<div class="text-field">
+				<input class="text-field__input" type="text" name="newUrlSlug" placeholder="Enter url slug" />
+			</div>
+			<button class="btn btn--primary" id="add-button">Add</button>
+		</div>
+	</div>
+	<script src="./app.js"></script>
+</body>
+</html>
