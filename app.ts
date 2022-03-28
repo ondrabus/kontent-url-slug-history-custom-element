@@ -25,7 +25,6 @@ const initCustomElement = (element: IElement, context: IContext) => {
     disabled = element.disabled
 
     history = JSON.parse(element.value) ?? []
-    console.log(history)
     deliveryClient = createDeliveryClient({
         projectId: projectId,
         globalHeaders: () => [
