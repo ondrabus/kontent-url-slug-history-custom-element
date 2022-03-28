@@ -2,6 +2,8 @@
 
 This is a [custom element](https://kontent.ai/learn/tutorials/develop-apps/integrate/content-editing-extensions) for [Kontent](https://kontent.ai) that allows users to preserve history of URL slugs.
 
+The element watches the URL slug element and automatically preserves the old URL slug when it gets changed. Apart from that, it also allows manual entry and removal.
+
 ![Screenshot of custom element](custom-element-screenshot.png)
 
 ## Setup
@@ -39,3 +41,9 @@ Netlify has made this easy. If you click the deploy button below, it will guide 
 ## What is Saved?
 
 The value is an array of strings (old URL slugs).
+
+```
+["old-url-slug", "even-older-url-slug"]
+```
+
+
