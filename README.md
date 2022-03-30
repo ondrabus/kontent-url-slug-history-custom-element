@@ -27,7 +27,7 @@ The custom element may only be used for content types that contain the URL slug 
 
 ```
 {
-    "urlSlugElementCodename": "{codename of your custom element}"
+    "urlSlugElementCodename": "{codename of the URL slug element}"
 }
 ```
 This configuration is required and the custom element won't work without it.
